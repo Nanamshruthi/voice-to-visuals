@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice2Visual</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Voice2Visual Logo" class="logo">
+        <h1>Voice2Visual</h1>
+        <p class="tagline">Transforming Words into Art.</p>
+
+        <form method="POST" action="/generate">
+            <button type="submit">🎨 Generate Image</button>
+        </form>
+
+        <div class="text-section">
+            <p><strong>Original Text:</strong> {{ original_text }}</p>
+            <p><strong>Translated Text:</strong> {{ translated_text }}</p>
+        </div>
+
+        <form method="POST" action="/save">
+            <button type="submit">💾 Save Image</button>
+        </form>
+    </div>
+</body>
+</html>
