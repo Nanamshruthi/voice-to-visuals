@@ -31,21 +31,30 @@ requests / openai (or any AI API) – Image generation
 
 os, datetime – File handling
 
-📂 Project Structure
+📂 Project Structure                                                                                                                                                                                                 
 Voice2Visuals/
+
 │── static/
-│   ├──style              # CSS file 
+
+       ├──style              # CSS file 
 │── template/
-│   └── index             # HTML file
+
+       └── index             # HTML file
 │── venv/
-│   └── Lib
-│   └── Scripts
-│   └── .gitignore
-│   └── pyvenv
+
+       └── Lib
+       └── Scripts
+       └── .gitignore
+       └── pyvenv
+       
 │── code                  #python source file
+
 │── logo
+
 │── requirements.txt      # Dependencies
+
 │── README.md             # Project documentation
+
 
 ⚡ Installation
 
