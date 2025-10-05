@@ -10,6 +10,8 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         portaudio19-dev \
         build-essential \
+        tk8.6 \
+        tcl8.6 \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory for the application
