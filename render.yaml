@@ -1,14 +1,11 @@
 # render.yaml
-
-# Replace 'web' with 'worker' if this is a background worker service
 services:
-  - type: web
+  - type: web # Change to 'worker' if this is a background service
     name: voice-to-visuals
-    # Replace 'python app.py' with your actual start command
-    buildCommand: pip install -r requirements.txt
-    startCommand: python main.py 
     env: python
-    # This is the critical section for system dependencies
-    plan: starter
+    plan: starter # Or your chosen plan
+    # The systemPackages section is CRITICAL for installing C dependencies
     systemPackages:
       - portaudio19-dev
+    buildCommand: pip install -r requirements.txt
+    startCommand: # Specify your application's actual startup command here (e.g., python app.py)
