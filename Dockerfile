@@ -2,7 +2,7 @@
 
 # Stage 1: Use a reliable Python base image
 # We use a slim version to keep the final image small
-FROM python:3.13-slim
+FROM python:3.13
 
 # Install the system dependency: PortAudio development files
 # This is the step that fixes your build error.
