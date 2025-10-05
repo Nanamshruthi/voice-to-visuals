@@ -28,4 +28,4 @@ COPY . .
 
 # Define the command to run the application
 # You MUST replace 'main.py' with the actual entry point of your script
-CMD ["python", "main.py"]
+CMD ["python", "code.py"]
