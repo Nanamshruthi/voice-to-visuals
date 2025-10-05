@@ -12,6 +12,9 @@ RUN apt-get update && \
         build-essential \
         tk8.6 \
         tcl8.6 \
+        libffi-dev \
+        zlib1g-dev \
+
     && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory for the application
